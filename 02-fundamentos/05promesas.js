@@ -83,3 +83,18 @@ getEmpleado(3).then(empleado => {
 });
 
 // el resolve y el reject no es un return
+
+
+// Promesas en cadena
+
+getEmpleado(3).then(empleado => {
+        return getSalario(empleado)
+    })
+    .then(reso => {
+        console.log(`El salario de ${ resp.nombre } es de ${ resp.salario } en cadena`);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+
+
