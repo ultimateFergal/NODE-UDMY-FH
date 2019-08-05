@@ -36,8 +36,12 @@ let base = 'as';
     .then (archivo => console.log(`Àrchivo creado: ${ archivo }`));
  */
 
-let argv = process.argv;
-let parametro = argv[2];
+ const argv = require('yargs').argv;
+
+ console.log(argv, 'argv de yargs');
+ 
+let argv2 = process.argv;
+let parametro = argv2[2];
 base = parametro.split('=')[1];
 
 console.log(parametro, 'parametro');
