@@ -1,4 +1,4 @@
 # dependencies
-/node_modules
-/tablas
-/tablas/*.txt
+node_modules/
+tablas/
+tablas/*.txt
